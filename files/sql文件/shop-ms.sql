@@ -28,7 +28,7 @@ CREATE TABLE `goods` (
   `gprice` float NOT NULL COMMENT '商品价格',
   `gnum` int(11) NOT NULL COMMENT '商品数量',
   PRIMARY KEY (`gid`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf-8 COMMENT '销售员信息表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -55,7 +55,7 @@ CREATE TABLE `gsales` (
   `sdate` bigint(11) NOT NULL DEFAULT '0' COMMENT '商品销售日期的时间戳',
   `snum` int(11) NOT NULL DEFAULT '0' COMMENT '销售数量',
   PRIMARY KEY (`gsid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf-8 COMMENT '销售员信息表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -81,7 +81,7 @@ CREATE TABLE `salesman` (
   `spassword` varchar(45) NOT NULL DEFAULT '' COMMENT '登录密码，明文存储',
   PRIMARY KEY (`sid`),
   UNIQUE KEY `sname_UNIQUE` (`sname`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf-8 COMMENT '销售员信息表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
