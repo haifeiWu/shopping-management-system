@@ -3,3 +3,4 @@
 output
 my_tests/
 *.iml
+.out
